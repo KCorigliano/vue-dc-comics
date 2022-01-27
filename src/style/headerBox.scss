@@ -1,0 +1,31 @@
+.header{
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1200px;
+        margin: 0 auto;
+        height: 75px;
+        
+        .header-logo{
+            img{
+                width: 75px;
+            }
+        }
+
+        .header-text{
+    
+            span{
+                padding: 5px 15px;
+                font-size: 12px;
+            }
+        }
+
+    }
+
+    .jumbotron{
+        background: url(../assets/jumbotron.jpg);
+        height: 450px;
+    }
+}
