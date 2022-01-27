@@ -1,0 +1,38 @@
+.footer{
+    background: url("../assets/footer-bg.jpg");
+    background-size: 100%;
+
+    .container{
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        
+        > div{
+            width: 50%;
+        }
+    
+        .footer-left{
+            display: flex;
+            color: white;
+            text-align: left;
+            padding: 30px 0;
+    
+            > div{
+                margin-right: 30px;
+
+                p{
+                    color: grey;
+                    font-size: 12px;
+                    cursor: pointer;
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        .footer-right{
+            background: url("../assets/dc-logo-bg.png") no-repeat;
+            background-position: 50%;
+        }
+    }
+
+}
