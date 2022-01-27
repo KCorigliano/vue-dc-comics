@@ -5,16 +5,16 @@
                 <img src="@/assets/dc-logo.png" alt="">
             </div>
             <div class="header-text">
-                <span>CHARACTERS</span>
-                <span>COMICS</span>
-                <span>MOVIES</span>
-                <span>TV</span>
-                <span>GAMES</span>
-                <span>COLLECTIBLES</span>
-                <span>VIDEOS</span>
-                <span>FANS</span>
-                <span>NEWS</span>
-                <span>SHOP</span>
+                <div><span>CHARACTERS</span></div>
+                <div><span>COMICS</span></div>
+                <div><span>MOVIES</span></div>
+                <div><span>TV</span></div>
+                <div><span>GAMES</span></div>
+                <div><span>COLLECTIBLES</span></div>
+                <div><span>VIDEOS</span></div>
+                <div><span>FANS</span></div>
+                <div><span>NEWS</span></div>
+                <div><span>SHOP</span></div>
             </div>
         </nav>
         <div class="jumbotron"></div>

@@ -1,3 +1,5 @@
+@import '@/style/variables.scss';
+
 .header{
     
     nav{
@@ -10,15 +12,29 @@
         
         .header-logo{
             img{
-                width: 75px;
+                width: 65px;
             }
         }
 
         .header-text{
+            display: flex;
+
+            > div{
+                height: 75px;
+                padding: 0 15px;
+                line-height: 75px;
+                border-bottom: 4px solid transparent;
+
+                &:hover{
+                    border-bottom: 4px solid $hoverColor;
+                    color: $hoverColor;
+                    cursor: pointer;
+                }
+            }
     
             span{
-                padding: 5px 15px;
                 font-size: 12px;
+                font-weight: bold;
             }
         }
 
