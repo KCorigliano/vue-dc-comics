@@ -1,12 +1,15 @@
 <template>
     <div class="main">
         <div class="container">
-            <div class="card" v-for="(card, index) in cards" :key="index">
-                <div>
-                    <img class="image" :src="card.thumb" alt="">
+            <div class="row">
+                <div class="card" v-for="(card, index) in cards" :key="index">
+                    <div>
+                        <img class="image" :src="card.thumb" alt="">
+                    </div>
+                    <span>{{card.series}}</span>
                 </div>
-                <span>{{card.series}}</span>
             </div>
+            <span class="button">LOAD MORE</span>
         </div>
     </div>
 </template>
@@ -21,40 +24,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/variables';
 .main{
     background-color: #333;
 
     .container{
         width: 1200px;
-        display: flex;
         margin: 0 auto;
-        justify-content: space-around;
-        padding: 50px 0;
-        flex-wrap: wrap;
+        padding: 50px 0 25px 0;
 
-        .card{
-            width: calc((100% / 6) - 15px);
-            height: 185px;
-            padding: 15px 0;
-            text-align: left;
-            color: white;
-            margin-bottom: 75px;
+        .row{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
 
-            div{
-                margin-bottom: 15px;
-
-                .image{
-                    width: 100%;
-                    max-height: 185px;
-                    object-fit: cover;
+            .card{
+                width: calc((100% / 6) - 15px);
+                height: 185px;
+                padding: 15px 0;
+                text-align: left;
+                color: white;
+                margin-bottom: 75px;
+    
+                div{
+                    margin-bottom: 15px;
+    
+                    .image{
+                        width: 100%;
+                        max-height: 185px;
+                        object-fit: cover;
+                    }
+                }
+    
+                span{
+                    text-transform: uppercase;
+                    font-size: 12px;
                 }
             }
-
-            span{
-                text-transform: uppercase;
-                font-size: 12px;
-            }
         }
-    }
+
+        .button{
+            color: white;
+            width: auto;
+            padding: 10px 50px;
+            font-size: 12px;
+            background-color: $hoverColor;
+            cursor: pointer;
+        }
+    }    
 }
 </style>
